@@ -1,0 +1,12 @@
+.MMM-IDFMobilite div {
+    color: purple;
+}
+
+.MMM-IDFMobilite .cell {
+  padding: 0 5px;
+  color: #fff;
+}
+
+.MMM-IDFMobilite .cell.time {
+  font-weight: bold;
+}

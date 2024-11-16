@@ -1,8 +1,8 @@
 {
-  "name": "mmm-template",
+  "name": "mmm-idfmobilite",
   "version": "1.0.0",
   "description": "[Module description]",
-  "main": "MMM-Template.js",
+  "main": "MMM-IDFMobilite.js",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
