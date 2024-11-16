@@ -33,7 +33,7 @@ Module.register("MMM-IDFMobilite", {
     moment.locale(config.language);
 
     this.fetchNextDepartures();
-    setInterval(() => this.fetchNextDepartures(), 30000);
+    setInterval(() => this.fetchNextDepartures(), 60000);
   },
 
   fetchNextDepartures() {
