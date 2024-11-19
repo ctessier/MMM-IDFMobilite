@@ -40,7 +40,7 @@ module.exports = NodeHelper.create({
           const departure = d.MonitoredVehicleJourney.MonitoredCall
 
           return {
-            datetime: departure.ExpectedArrivalTime || departure.AimedArrivalTime,
+            datetime: departure.ExpectedDepartureTime || departure.AimedDepartureTime,
             destination: departure.DestinationDisplay?.[0]?.value,
             atStop: departure.VehicleAtStop,
             status: departure.DepartureStatus,
