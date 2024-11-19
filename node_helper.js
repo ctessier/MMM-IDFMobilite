@@ -40,10 +40,8 @@ module.exports = NodeHelper.create({
           const departure = d.MonitoredVehicleJourney.MonitoredCall
 
           return {
-            datetime: departure.ExpectedArrivalTime,
+            datetime: departure.ExpectedArrivalTime || departure.AimedArrivalTime,
             destination: departure.DestinationDisplay?.[0]?.value,
-            time: moment(departure.ExpectedArrivalTime).format("HH:mm"),
-            relativeTime: moment(departure.ExpectedArrivalTime).fromNow(),
             atStop: departure.VehicleAtStop,
             status: departure.DepartureStatus,
             note: d.MonitoredVehicleJourney.JourneyNote?.[0]?.value,
